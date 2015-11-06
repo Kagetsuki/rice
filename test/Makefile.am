@@ -63,10 +63,11 @@ AM_CXXLAGS = \
 
 AM_LDFLAGS = \
 	$(RUBY_LDFLAGS) \
-	-L../rice
+	-L../rice/.libs
 
 LIBS = \
-	-lrice \
 	$(RUBY_LIBS) \
-	$(RUBY_LIBRUBYARG)
+	$(RUBY_LIBRUBYARG) \
+	-lrice
 
+#unittest_LDADD = librice.la

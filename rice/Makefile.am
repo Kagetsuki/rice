@@ -1,5 +1,7 @@
 lib_LTLIBRARIES = librice.la
 
+librice_la_LDFLAGS = -module -shared
+
 librice_la_SOURCES = \
 Class.cpp \
 Data_Type.cpp \

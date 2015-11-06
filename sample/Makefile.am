@@ -1,5 +1,5 @@
 RUBY_EXTCONF_OPTIONS = -I@RICE_ROOT@/ruby/lib
-EXTCONF_OPTIONS = --with-cppflags="-I@RICE_ROOT@" --with-libpath="@RICE_ROOT@/rice"
+EXTCONF_OPTIONS = --with-cppflags="-I@RICE_ROOT@" --with-libpath="@RICE_ROOT@/rice/.libs"
 
 EXTRA_DIST = \
 	enum/extconf.rb \

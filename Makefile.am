@@ -9,6 +9,8 @@ noinst_EXTRA = rice/README.doxygen
 
 DX_EXTRA_DEPEND = rice/README.doxygen
 
+ACLOCAL_AMFLAGS = -I m4
+
 EXTRA_DIST = \
 	README.mingw \
 	post-autoconf.rb \
