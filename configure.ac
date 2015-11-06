@@ -1,6 +1,9 @@
 AC_INIT(rice, 1.1)
 AC_CONFIG_SRCDIR(rice)
+AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([subdir-objects])
+
+LT_INIT([disable-static])
 
 AC_CONFIG_HEADERS(rice/config.hpp)
 
