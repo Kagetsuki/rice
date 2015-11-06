@@ -4,7 +4,7 @@ require 'ruby/lib/version'
 $spec = Gem::Specification.new do |s|
   s.name = 'rice'
   s.version = Rice::VERSION
-  s.license = "MIT"
+  s.license = 'MIT'
   s.summary = 'Ruby Interface for C++ Extensions'
   s.homepage = 'https://github.com/jasonroelofs/rice'
   s.authors = ['Paul Brannan', 'Jason Roelofs']
@@ -102,7 +102,10 @@ of the Ruby C API.
     'test/ext/t1/extconf.rb',
     'test/ext/t1/*.*pp',
     'test/ext/t2/extconf.rb',
-    'test/ext/t2/*.*pp'
+    'test/ext/t2/*.*pp',
+
+    # Gemspec
+    'rice.gemspec'
   ]
 
   s.files = patterns.collect { |p| Dir.glob(p) }.flatten

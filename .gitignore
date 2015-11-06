@@ -15,9 +15,11 @@ install-sh
 missing
 test-driver
 pkg
+.dirstamp
 *.o
 *.so
 *.log
+*.gem
 .deps
 *~
 .*.swp
